@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WC Lineage · family trees for Warrior Cats roleplay</title>
+<meta name="description" content="WC Lineage is a free, fan-made family-tree editor for the Warrior Cats RP community. One file, fully offline, no accounts, no telemetry.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐾%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#14161c; --bg2:#1c1f27; --bg3:#262a35; --edge:#3a3f4d;
+    --text:#e8e6df; --text-dim:#9aa0ad; --accent:#d9a441; --accent2:#7fb4d9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:var(--bg); color:var(--text); min-height:100vh;
+       display:flex; flex-direction:column; align-items:center; justify-content:center;
+       font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+       padding:40px 24px 28px; text-align:center}
+  main{max-width:880px; width:100%}
+  h1,.what,.run,.note{max-width:620px; margin-left:auto; margin-right:auto}
+  .brand{display:inline-flex; align-items:center; gap:10px; font-weight:800; font-size:22px;
+         line-height:1; margin-bottom:26px}
+  .brand .paw{color:var(--accent2)}
+  .beta{display:inline-grid; place-items:center; font-size:11px; font-weight:700;
+        letter-spacing:.08em; line-height:1; color:var(--bg); background:var(--accent);
+        border-radius:4px; padding:4px 7px}
+  h1{font-size:clamp(28px,6vw,40px); line-height:1.15; font-weight:800; letter-spacing:-.5px;
+     margin-bottom:18px}
+  h1 em{font-style:normal; color:var(--accent)}
+  p{color:var(--text-dim)}
+  .what{font-size:17px; margin-bottom:26px}
+  .shot{display:block; max-width:880px; margin:0 auto 28px; border:1px solid var(--edge);
+        border-radius:10px; overflow:hidden; background:var(--bg2);
+        box-shadow:0 18px 44px rgba(0,0,0,.45)}
+  .shot img{display:block; width:100%; height:auto}
+  .dlbig{margin-bottom:14px}
+  .btn{display:inline-block; padding:15px 30px; border-radius:10px; font-weight:700;
+       font-size:17.5px; background:var(--accent); color:var(--bg); text-decoration:none}
+  .btn:hover{filter:brightness(1.08)}
+  .size{display:block; margin-top:9px; font-size:12.5px; color:var(--text-dim)}
+  .run{font-size:14.5px; margin-bottom:26px}
+  .run code{background:var(--bg3); border:1px solid var(--edge); border-radius:5px;
+            padding:1px 6px; font-size:13px; color:var(--text)}
+  .note{font-size:14px; border:1px solid var(--edge); background:var(--bg2);
+        border-radius:10px; padding:12px 16px; margin-bottom:10px}
+  .note b{color:var(--text)}
+  footer{margin-top:40px; max-width:620px; font-size:11.5px; color:var(--text-dim); opacity:.85}
+  footer p{margin-bottom:8px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><span class="paw">🐾</span><span>WC Lineage</span><span class="beta">BETA</span></div>
+  <h1>Family trees for<br><em>Warrior Cats</em> roleplay.</h1>
+  <p class="what">A free, fan-made family-tree editor for the Warriors RP community.
+  Build your trees cat by cat: clans, ranks, moons, mates, mentors, litters, identity,
+  and portraits, on a canvas that keeps the lines clean. Everything runs in
+  your browser from a single file, fully offline. No accounts, no telemetry; your
+  cats stay on your machine.</p>
+  <a class="shot" href="img/app.png" target="_blank" rel="noopener">
+    <img src="img/app.png" alt="The WC Lineage app: a family tree of cat tiles with identity-flag halves on a dark canvas, with the toolbar above and a profile panel open beside it">
+  </a>
+  <div class="dlbig">
+    <a class="btn" href="downloads/WC-Lineage-v0.14.zip" download>⬇ Download WC Lineage v0.14</a>
+    <span class="size">free · ≈ 486 KB zip · Windows, Mac, Linux</span>
+  </div>
+  <p class="run">Unzip anywhere, then double-click <code>index.html</code>. Press
+  <b>Sample</b> for a demo project. Chrome and Edge work best.</p>
+  <div class="note"><b>This is a beta.</b> Back up now and then via ⇄ Share →
+  Download .db, and send feedback to whoever gave you this link.</div>
+  <p style="font-size:13px">A full site with screenshots and a feature tour is coming soon.</p>
+</main>
+<footer>
+  <p>Unofficial fan tooling: not affiliated with, endorsed by, or connected to the publishers or
+  authors of the <i>Warriors</i> books. No copyrighted Warriors text, art, or data is included;
+  all character content is created by you.</p>
+  <p>Pride-flag stripe colors are public-domain community specifications. The SQLite engine
+  (sql.js) is MIT-licensed and built into the download (license text included). Your data never
+  leaves your browser.</p>
+</footer>
+</body>
+</html>
